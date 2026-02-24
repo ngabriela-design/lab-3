@@ -1,0 +1,113 @@
+/*
+    Natalie DeFrates
+    Lab 3: Advanced Layout with Flexbox, Grid, and Positioning- CSS Style Page
+    Feb 25, 2026
+ */
+ @charset "UTF-8";
+
+
+
+/**************** Style rules for mobile viewport*****************/
+
+ .tab-desk {
+    display: none;
+}
+header{
+    grid-area: header;
+    position: sticky;
+	text-align: center;
+    margin:0 auto;
+    font-family: 'Garamond', 'Times New Roman', serif;
+    font-size: 2em;
+    text-align: center;
+}
+
+h1{
+    text-align: right;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-wrap: balance;
+    margin:0 auto;
+}
+
+body{
+    background-size: cover;
+    background-attachment: fixed;
+   
+}
+
+footer {
+    text-align: center;
+    font-size: 0.85em;
+    font-weight: bold;
+}
+
+/* Media Query for Tablet & Desktop Viewport */
+@media screen and (min-width: 600px), print{ 
+
+    .tab-desk {
+        display: block;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+header {
+    grid-area: header;
+    position: sticky;
+	text-align: center;
+    margin:0 auto;
+    font-family: 'Garamond', 'Times New Roman', serif;
+    font-size: 2em;
+    text-align: center;
+}
+
+
+h1{
+    text-align: right;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-wrap: balance;
+    margin:0 auto;
+}
+
+h2{
+    display: flex;
+    text-align: center; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+    
+    /* Tablet Viewport: Style rules for nav area */
+nav{
+	width: 75%;
+	padding:10px;
+	background-color: #5F9C9C;
+	margin:0 auto;
+}
+
+nav ul {
+    list-style-type: none;
+    margin:0 auto;
+	list-style:none;
+	text-align: center;
+	background-color: #5F9C9C;
+}
+
+nav li {
+    font-weight: bold;
+    background-color: #5F9C9C;
+    display:inline-block;
+    margin:0 auto;
+}
+
+body{
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.85em;
+    font-weight: bold;
+}
+}
