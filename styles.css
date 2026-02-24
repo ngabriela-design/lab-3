@@ -12,9 +12,24 @@
  .tab-desk {
     display: none;
 }
+
+#navbar{
+    background-color: #5F9C9C;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: top 0.3s;
+    float:left;
+    color:antiquewhite;
+    text-align: center;
+    padding: 10px;
+}
+#navbar a:hover{
+    background-color: blanchedalmond;
+    color:black;
+}
+
 header{
-    grid-area: header;
-    position: sticky;
 	text-align: center;
     margin:0 auto;
     font-family: 'Garamond', 'Times New Roman', serif;
@@ -23,16 +38,29 @@ header{
 }
 
 h1{
-    text-align: right;
+    text-align: left;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-wrap: balance;
-    margin:0 auto;
+}
+
+h2{
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h3{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body{
     background-size: cover;
     background-attachment: fixed;
-   
+}
+
+main{
+    background-color: bisque;
+
 }
 
 footer {
@@ -64,45 +92,46 @@ header {
 
 
 h1{
-    text-align: right;
+    text-align: left;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-wrap: balance;
-    margin:0 auto;
 }
 
 h2{
-    display: flex;
-    text-align: center; 
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h3{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
     
-    /* Tablet Viewport: Style rules for nav area */
-nav{
-	width: 75%;
-	padding:10px;
-	background-color: #5F9C9C;
-	margin:0 auto;
-}
-
-nav ul {
-    list-style-type: none;
-    margin:0 auto;
-	list-style:none;
-	text-align: center;
-	background-color: #5F9C9C;
-}
-
-nav li {
-    font-weight: bold;
+#navbar{
     background-color: #5F9C9C;
-    display:inline-block;
-    margin:0 auto;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: top 0.3s;
+    float:left;
+    color:antiquewhite;
+    text-align: center;
+    padding: 10px;
+}
+#navbar a:hover{
+    background-color: blanchedalmond;
+    color:black;
 }
 
 body{
     background-size: cover;
     background-attachment: fixed;
+}
+
+main{
+    background-color: bisque;
+
 }
 
 footer {
