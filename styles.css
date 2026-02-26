@@ -49,6 +49,10 @@ header{
     font-size: 2em;
     text-align: center;
 }
+.logo{
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
 
 h1{
     text-align: left;
@@ -83,7 +87,7 @@ footer {
 }
 
 /* Media Query for Tablet & Desktop Viewport */
-@media screen and (min-width: 600px), print{ 
+@media screen and (min-width: 600px) { 
 
     .tab-desk {
         display: block;
@@ -94,7 +98,7 @@ footer {
     }
 
 header {
-    grid-area: header;
+    grid-row: 1/2;
     position: sticky;
 	text-align: center;
     margin:0 auto;
@@ -125,12 +129,12 @@ h3{
     background-color: #5F9C9C;
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 200px;
     transition: top 0.3s;
-    float:left;
     color:antiquewhite;
     text-align: center;
     padding: 10px;
+
 }
 #navbar a:hover{
     background-color: blanchedalmond;
@@ -140,6 +144,9 @@ h3{
 body{
     background-size: cover;
     background-attachment: fixed;
+    display:grid;
+    grid-template-columns: 3fr, 1fr;
+    grid-template-rows: 200px, 1fr, 100px;
 }
 
 main{
