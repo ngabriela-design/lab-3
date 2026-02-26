@@ -13,9 +13,7 @@
 
     }
 };
-.logo{
-    animation: forwards;
-}
+
 
 
 /**************** Style rules for mobile viewport*****************/
@@ -90,7 +88,7 @@ footer {
 @media screen and (min-width: 600px) { 
 
     .tab-desk {
-        display: block;
+        display: grid;
     }
 
     .mobile {
@@ -99,18 +97,15 @@ footer {
 
 header {
     grid-row: 1/2;
-    position: sticky;
-	text-align: center;
     margin:0 auto;
     font-family: 'Garamond', 'Times New Roman', serif;
-    font-size: 2em;
-    text-align: center;
 }
 
 .logo{
     grid-column: 3/4;
     grid-row: 1/2;
-    size-adjust: 200px 200px;
+    animation: forwards;
+
 }
 
 h1{
@@ -155,8 +150,8 @@ body{
     background-size: cover;
     background-attachment: fixed;
     display:grid;
-    grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: 200px 3fr 100px;
+    grid-template-columns: 2fr 3fr 1fr;
+    grid-template-rows: 20% 3fr 10%;
 }
 
 main{
