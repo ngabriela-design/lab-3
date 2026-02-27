@@ -9,6 +9,9 @@
         <meta charset="utf-8">
         <link rel="stylesheet" href="styles.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Scope+One&display=swap" rel="styles">
         <link rel="icon" type="#" href="#"><!--favicon for site included here-->
      </head>
      <body>
@@ -18,8 +21,8 @@
             <div id="header" style="grid-area: box-1">
             <header>
                 <!--h1 and h2 tags go to 2 column, row 1 section; Mobile: h1/h2 ease in from left, Tablet/Desktop: h1 fade in from top, h2 fade in-->
-                <h1>Handi Dandi</h1>
-                <h2>We're here to give a you a hand</h2>
+                <h1 class="masked-text">Handi Dandi</h1>
+                <h2 class="typing">We're here to give a you a hand</h2>
             </header>
             </div>  
 
@@ -31,11 +34,30 @@
 
             <div id="navbar" styles="box-3">
                 <nav>
-                    <!--nav is intended to ease in while user is hovering over menu/more lines; on left-hand side of website for desktop/tablet measurements, from top on mobile (ease out while scrolling down)-->
-                    <li>About Us</li>
-                    <li>Our Mission and Handi Dandi</li>
-                    <li>Contact Us</li>
-                </nav>
+                    <!--nav is intended to ease in while user is hovering over menu/more lines; on left-hand side of website for desktop/tablet measurements, from top on mobile (ease out while scrolling down)--> 
+            <input type="checkbox" id="myInput">
+                <label for="myInput">
+                <span class="bar top"></span>
+                <span class="bar middle"></span>
+                <span class="bar bottom"></span>
+                </label>
+
+                <aside>
+                <div class="aside-section aside-left">
+                    <div class="aside-content">
+                    </div>
+                </div>
+
+                <div class="aside-section aside-right">
+                    <ul class="aside-list">
+                    <li><a href="" class="aside-anchor">About Us</a></li>
+                    <li><a href="" class="aside-anchor">Our Mission and Handi Dandi</a></li>
+                    <li><a href="" class="aside-anchor">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                </aside>
+            </nav>
             </div>
 
             <div id="main" styles="box-4">
