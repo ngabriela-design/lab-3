@@ -107,7 +107,7 @@ footer {
         grid-auto-rows: minmax(20% 35%);
         grid-template-areas: 
         "box-1 box-1 box-2"
-        "box-3 content content"
+        "box-3 main main"
         "box-4 box-4 box-4" ;
     }
 
@@ -117,7 +117,7 @@ header {
     color:aliceblue;
 }
 
-.logo{
+#logo{
     /*animation-duration: 3s;
     animation-name: spin;
     animation-timing-function: ease;
@@ -131,8 +131,9 @@ header {
         
     }
     50% {
-        scale: 2;
+        scale: 1.5;
         transform: rotate(0);
+        border-radius: 25;
     }
     100% {
        transform: rotate(360deg);
@@ -191,8 +192,9 @@ body{
 }
 
 main{
-    grid-row:2/3;
     grid-column: 2/3;
+    grid-row: 2/3;
+    border-radius: 5%;
 }
 
 .section1{
@@ -200,17 +202,23 @@ main{
     position:relative;
     background-color: bisque;
 }
-.main::after{
+.main::after, .main::before{
+    --angle: 0deg;
     content: '';
     position:absolute;
     height: 100%;
     width: 100%;
-    background: red;
+    background-image: conic-gradient(from var(--angle),red, blue, green, red);
     top: 50%;
     left: 50%;
     translate: -50% -50%;
     z-index: -1;
     padding: 5%;
+    animation:3s border linear infinite;
+}
+.main::before{
+    filter:blur(1rem);
+    opacity: 0.5;
 }
 
 .banner{
@@ -220,14 +228,11 @@ main{
 }
 
 @keyframes border{
-    0%{
-        
+    from{
+        --angle:0deg;
     }
-    50% {
-       
-    }
-    100% {
-       
+    to{
+      --angle:360deg; 
     }
 };
 
