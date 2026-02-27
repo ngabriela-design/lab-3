@@ -114,13 +114,17 @@ footer {
 header {
     text-align: left;
     font-family: 'Garamond', 'Times New Roman', serif;
+    color:aliceblue;
 }
 
 .logo{
-    animation-duration: 3s;
+    /*animation-duration: 3s;
     animation-name: spin;
-    
-    object-fit: contain;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;*/
+    animation: 3s spin ease 1 normal forwards;
 }
 @keyframes spin{
     0%{
@@ -129,11 +133,10 @@ header {
     50% {
         scale: 2;
         transform: rotate(0);
-        border-radius: 0;
     }
     100% {
        transform: rotate(360deg);
-       border-radius: 50%; 
+       border-radius: 50%;
     }
 };
 
@@ -172,23 +175,55 @@ h3{
 body{
     background-size: cover;
     background-attachment: fixed;
+    background-color: rgb 27 27 27;
     /*display:grid;
     grid-template-columns: 2fr 3fr 1fr;
     grid-template-rows: 20% 3fr 10%;*/
 }
 
 main{
-    background-color: bisque;
     grid-row:2/3;
     grid-column: 2/3;
 }
+
+.section1{
+    text-wrap: balance;
+    position:relative;
+    background-color: bisque;
+}
+.main::after{
+    content: '';
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    background: red;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+}
+
+.banner{
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+@keyframes border{
+    0%{
+        
+    }
+    50% {
+       
+    }
+    100% {
+       
+    }
+};
 
 footer {
     text-align: center;
     font-size: 1em;
     font-weight: bold;
-    grid-row: 3/4;
-    width: 100%;
 
 }
 }
